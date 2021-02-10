@@ -2,15 +2,18 @@
 # Math library
 # Author: Sébastien Combéfis
 # Version: February 8, 2018
-
+from math import*
 
 def fact(n):
-	"""Computes the factorial of a natural number.
-	
-	Pre: -
-	Post: Returns the factorial of 'n'.
-	Throws: ValueError if n < 0
-	"""
+	if n<0 :
+		print("error n < 0")
+	else :
+		x = 0
+		v = 1
+		while x < n:
+			x =  x +1
+			v = v*x
+		return v
 	pass
 
 def roots(a, b, c):
