@@ -7,7 +7,7 @@ import utils
 
 class TestUtils(unittest.TestCase):
     def test_fact(self):
-        # À compléter...
+        self.assertEqual(utils.fact(5) , 0)
         pass
     
     def test_roots(self):
@@ -22,3 +22,5 @@ if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(TestUtils)
     runner = unittest.TextTestRunner()
     exit(not runner.run(suite).wasSuccessful())
+
+
