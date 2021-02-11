@@ -22,6 +22,15 @@ def roots(a, b, c):
 	Pre: -
 	Post: Returns a tuple with zero, one or two elements corresponding
 		to the roots of the ax^2 + bx + c polynomial.
+		delta = b*b-4*a*c
+	#print(delta)
+	if (delta ==0):
+		return (-b/(2*a))
+	elif (delta > 0):
+		return ( (-b-sqrt(delta))/2*a  ,(-b+sqrt(delta))/2*a )
+	elif(delta <0):
+		print("no solutions")
+	pass
 	"""
 	pass
 
